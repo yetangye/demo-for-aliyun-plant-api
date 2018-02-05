@@ -3,7 +3,16 @@
 
 ## Java语言示例
 
-### java/src/main/tld.your.company/okhttp/RequestDemoForAliyunPlantApiByOkHttp.java
-  是用OkHttp库做请求的示例代码
+### 用OkHttp库做请求
+  参见代码文件：java/src/main/tld.your.company/okhttp/RequestDemoForAliyunPlantApiByOkHttp.java
   
+### 用Apache HttpClient库做请求
+  编写中
+
 ## JavaScript
+
+### NodeJS版
+  编写中
+  
+### 浏览器内JS版
+  编写中

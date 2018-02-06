@@ -1,12 +1,9 @@
 package tld.your.company.common;
 
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Base64;
 
 public class Utils {
     public static String loadFileAsBase64(String filePath) {

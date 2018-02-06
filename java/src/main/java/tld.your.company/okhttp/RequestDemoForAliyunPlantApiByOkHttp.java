@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 请先用pom.xml等方式导入OkHttp 3.9.1+的库，在JDK 1.8+运行本程序
+ * OkHttp 3.9.1+（在pom.xml内导入），在JDK 1.8+运行本程序
  *
  * 【注意】这只是一个使用OkHttp请求库的极简示例代码，
  * 缺少各种异常的完善处理以及和具体业务连接的逻辑，
@@ -30,17 +30,17 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
     public static void main(String args[]) {
         RequestDemoForAliyunPlantApiByOkHttp demo = new RequestDemoForAliyunPlantApiByOkHttp();
 
-        demo.recognize2(); //演示 植物花卉识别接口_v2 的API调用
-        demo.recognize();  //演示 植物花卉识别接口    的API调用
-        demo.weed();         //演示 常见杂草识别       的API调用
-        demo.info();       //演示 植物百科信息获取    的API调用
+        demo.recognize2().print(); //演示 植物花卉识别接口_v2 的API调用
+        demo.recognize().print();  //演示 植物花卉识别接口    的API调用
+        demo.weed().print();       //演示 常见杂草识别       的API调用
+        demo.info().print();       //演示 植物百科信息获取    的API调用
     }
 
 
     /**
      * 植物花卉识别接口_v2 的请求示例
      */
-    public void recognize2(){
+    public ResponseData recognize2(){
         //先准备数据
         String img_base64 = Utils.loadFileAsBase64("../pics/杜鹃.jpg");;
 
@@ -51,12 +51,13 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
         //发起网络请求，得到数据
         RequesterByOkHttp requester = new RequesterByOkHttp(BASE_URL + "plant/recognize2");
         ResponseData data = requester.postWwwFormUrlEncoded("APPCODE " + APP_CODE, bodyFields);
+        return data;
     }
 
     /**
      * 植物花卉识别接口 的请求示例 （已不推荐使用，建议使用上面的植物花卉识别接口_v2）
      */
-    public void recognize(){
+    public ResponseData recognize(){
         //先准备数据
         String img_base64 = Utils.loadFileAsBase64("../pics/杜鹃.jpg");;
 
@@ -67,12 +68,13 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
         //发起网络请求，得到数据
         RequesterByOkHttp requester = new RequesterByOkHttp(BASE_URL + "plant/recognize");
         ResponseData data = requester.postWwwFormUrlEncoded("APPCODE " + APP_CODE, bodyFields);
+        return data;
     }
 
     /**
      * 植物百科信息获取
      */
-    public void info(){
+    public ResponseData info(){
         //先准备数据
         String code = "CwZ0AVGtMcl5LJom";
 
@@ -83,13 +85,14 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
         //发起网络请求，得到数据
         RequesterByOkHttp requester = new RequesterByOkHttp(BASE_URL + "plant/info");
         ResponseData data = requester.postWwwFormUrlEncoded("APPCODE " + APP_CODE, bodyFields);
+        return data;
 
     }
 
     /**
      * 常见杂草识别
      */
-    public void weed(){
+    public ResponseData weed(){
         //先准备数据
         String img_base64 = Utils.loadFileAsBase64("../pics/狗尾草.jpg");;
 
@@ -100,5 +103,6 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
         //发起网络请求，得到数据
         RequesterByOkHttp requester = new RequesterByOkHttp(BASE_URL + "plant/recognize_weed");
         ResponseData data = requester.postWwwFormUrlEncoded("APPCODE " + APP_CODE, bodyFields);
+        return data;
     }
 }

@@ -10,7 +10,7 @@
   参见代码文件：java/src/main/tld.your.company/okhttp/RequestDemoForAliyunPlantApiByOkHttp.java
   
 ### 用Apache HttpClient库做请求
-  编写中
+  参见代码文件：java/src/main/tld.your.company/httpclient/RequestDemoForAliyunPlantApiByHttpClient.java
 
 ## JavaScript语言示例
 

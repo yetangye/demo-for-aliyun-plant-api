@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿里云市场 智能植物识别（含花卉与杂草）API的调用示例代码</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+
+<p>
+    在浏览器内运行，结果输出请查看浏览器控制台输出
+
+    【注意】这只是一个使用jQuery请求库的极简示例代码，
+    缺少各种异常的完善处理以及和具体业务连接的逻辑，
+    程序内的各种超时时间，要根据自己产品的网络环境和具体情况做判断和调整。
+
+    <a href="https://market.aliyun.com/products/57124001/cmapi018620.html#sku=yuncode1262000000">阿里云市场 智能植物识别（含花卉与杂草） API的购买网址</a>
+
+    <form>
+        <button type="button" onclick="info()">发起请求</button>
+    </form>
+
+</p>
+
+<script>
+    /**
+     * 植物花卉识别接口_v2 的请求示例
+     */
+    function info() {
+        //先准备数据
+        var apiContextUrl = 'plant/info';
+        var code = "CwZ0AVGtMcl5LJom";
+
+        var formData = {
+            code: code
+        };
+        post(apiContextUrl, formData);
+    }
+
+</script>
+
+</body>
+</html>

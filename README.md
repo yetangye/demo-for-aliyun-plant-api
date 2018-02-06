@@ -15,10 +15,12 @@
 ## JavaScript语言示例
 
 ### NodeJS版
-  编写中
+  参见代码： javascript/node目录
+  AppCode请在index.js内设置
   
 ### 浏览器内JS版
-  编写中
+  参见代码： javascript/browser目录
+  AppCode请在common.js内设置
   
 ## Android版（带拍照）
   编写中

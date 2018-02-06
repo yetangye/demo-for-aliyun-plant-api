@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿里云市场 智能植物识别（含花卉与杂草）API的调用示例代码</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+
+<p>
+    在浏览器内运行，结果输出请查看浏览器控制台输出
+
+    【注意】这只是一个使用jQuery请求库的极简示例代码，
+    缺少各种异常的完善处理以及和具体业务连接的逻辑，
+    程序内的各种超时时间，要根据自己产品的网络环境和具体情况做判断和调整。
+
+    <a href="https://market.aliyun.com/products/57124001/cmapi018620.html#sku=yuncode1262000000">阿里云市场 智能植物识别（含花卉与杂草） API的购买网址</a>
+
+    <p>请先选择一个.jpg格式的植物照片，然后点击发起请求按钮，应答结果可在浏览器控制台输出内查看到</p>
+
+    <form>
+        <input type="file" name="image" onchange="encodeImagetoBase64(this)">
+        <button type="button" onclick="weed()">发起请求</button>
+        <a class="link" href=""></a>
+    </form>
+
+</p>
+
+<script>
+    /**
+     * 常见杂草识别
+     */
+    function weed() {
+        //先准备数据
+        var apiContextUrl = 'plant/recognize_weed';
+        // $(".link").text()开头是：data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYAB...，要注意先去掉/9j/之前的部分
+        var img_base64 = $(".link").text().replace('data:image/jpeg;base64,', '');
+
+        var formData = {
+            img_base64: img_base64
+        };
+        post(apiContextUrl, formData);
+    }
+
+</script>
+
+</body>
+</html>

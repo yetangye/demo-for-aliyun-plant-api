@@ -1,0 +1,14 @@
+{
+  "name": "demo-for-aliyun-plant-api",
+  "version": "1.0.0",
+  "description": "阿里云市场 智能植物识别（含花卉与杂草）API的调用示例代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}

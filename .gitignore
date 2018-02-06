@@ -40,3 +40,14 @@ hs_err_pid*
 .idea/
 target/
 *.iml
+
+### JavaScript/NodeJS
+.DS_Store
+node_modules/
+npm-debug.log
+selenium-debug.log
+.idea
+package-lock.json
+yarn.lock
+yarn-error.log
+

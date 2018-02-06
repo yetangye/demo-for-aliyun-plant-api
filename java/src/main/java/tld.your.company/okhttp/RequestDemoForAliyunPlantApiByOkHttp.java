@@ -86,7 +86,6 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
         RequesterByOkHttp requester = new RequesterByOkHttp(BASE_URL + "plant/info");
         ResponseData data = requester.postWwwFormUrlEncoded("APPCODE " + APP_CODE, bodyFields);
         return data;
-
     }
 
     /**

@@ -20,7 +20,7 @@
     <p>请先选择一个.jpg格式的植物照片，然后点击发起请求按钮，应答结果可在浏览器控制台输出内查看到</p>
 
     <form>
-        <input type="file" name="image" onchange="encodeImagetoBase64(this)">
+        <input type="file" name="image" accept="image/jpeg" onchange="encodeImagetoBase64(this)">
         <button type="button" onclick="weed()">发起请求</button>
         <a class="link" href=""></a>
     </form>

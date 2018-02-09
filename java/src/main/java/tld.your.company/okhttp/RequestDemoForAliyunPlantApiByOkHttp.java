@@ -76,7 +76,7 @@ public class RequestDemoForAliyunPlantApiByOkHttp {
      */
     public ResponseData info(){
         //先准备数据
-        String code = "CwZ0AVGtMcl5LJom";
+        String code = "CwZ0AVGtMcl5LJom"; //这个植物代号是调用recognize2()时获得的InfoCode字段
 
         //组织POST BODY数据格式
         Map<String, String> bodyFields = new HashMap<String, String>();

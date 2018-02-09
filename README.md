@@ -31,6 +31,19 @@
   参见代码： javascript/browser目录
   AppCode请在common.js内设置
 
+## PHP
+
+  参见代码： php目录
+  AppCode请用每个php文件内的$appcode变量来设置
+
+## Python
+
+  编写中
+
+## .NET/C#
+
+  编写中
+
 ## Android版（带拍照）
 
   编写中

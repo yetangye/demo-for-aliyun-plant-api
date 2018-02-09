@@ -81,7 +81,7 @@ public class RequestDemoForAliyunPlantApiByHttpClient {
      */
     public ResponseData info(){
         //先准备数据
-        String code = "CwZ0AVGtMcl5LJom";
+        String code = "CwZ0AVGtMcl5LJom";//这个植物代号是调用recognize2()时获得的InfoCode字段
 
         //构建请求格式
         String apiUrl = BASE_URL + "plant/info";

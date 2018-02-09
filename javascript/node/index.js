@@ -64,7 +64,7 @@ function recognize() {
  */
 function info() {
     //先准备数据
-    var code = "CwZ0AVGtMcl5LJom";
+    var code = "CwZ0AVGtMcl5LJom"; //这个植物代号是调用 recognize2()接口可获得的InfoCode字段
     var apiContextUrl = 'plant/info';
 
     var formData = {

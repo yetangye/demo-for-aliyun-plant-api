@@ -49,12 +49,28 @@
 
   编写中
 
-## iOS版（带拍照）
+## iOS版
 
 ### Objective-C语言版
 
-  编写中
-  
-### Swift语言版
+  参见代码：ios/objective-x目录内的Xcode工程。
+  AppCode请在ViewController.m内设置。
+
+### Swift语言版（带拍照）
 
   编写中
+
+## 常见错误和解决方法
+
+### 应答码 401
+
+  用户AppCode输入不对或过期。如果是过期需重新购买。
+
+### 应答码 403
+
+  应答体为：
+  {"Status":1002,"Message":"The parameter img_base64 is not base64 ","Result":[]}
+
+  可能的原因包括：
+  （1）转化后的BASE64编码带 "data:image/jpeg;base64," 前缀，但在请求时没有去掉
+  （2）BASE64编码中的加号（+）没有被转化为 %2B

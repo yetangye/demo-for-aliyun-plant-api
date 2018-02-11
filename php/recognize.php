@@ -60,6 +60,7 @@ else {
     $contents = fread($handle, filesize($filename));
     fclose($handle);
 
+    //这里需要做urlencode，否则会出现错误： {"Status":1002,"Message":"The parameter img_base64 is not base64 ","Result":[]}
 	$img_base64 = urlencode(get_base64($contents));
 
     $host = "http://plantgw.nongbangzhu.cn";

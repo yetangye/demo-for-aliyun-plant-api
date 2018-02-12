@@ -37,7 +37,7 @@
   参见代码： php目录
   AppCode请用每个php文件内的$appcode变量来设置
 
-## Python
+## Python（Python 2/Python 3皆可）
 
   编写中
 
@@ -58,7 +58,9 @@
 
 ### Swift语言版（带拍照）
 
-  编写中
+  参见代码：ios/swift目录内的Xcode工程。
+  AppCode请在ViewController.swift内设置。
+  识别结果请从Xcode的日志输出中查看。
 
 ## 常见错误和解决方法
 

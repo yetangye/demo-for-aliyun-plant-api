@@ -68,6 +68,15 @@
   AppCode请在ViewController.swift内设置。
   识别结果请从Xcode的日志输出中查看。
 
+## 其他语言示例
+
+  可使用POSTMAN（ <https://www.getpostman.com/> ）工具构建好请求后，通过POSTMAN的code查看功能，查看到各语言的请求示例代码。
+
+  ![](postman/postman-1.png)
+  ![](postman/postman-2.png)
+  ![](postman/postman-3.png)
+  ![](postman/postman-4.png)
+
 ## 常见错误和解决方法
 
 ### 应答码 401

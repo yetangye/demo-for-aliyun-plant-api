@@ -45,7 +45,7 @@
 
 ## Python（Python 2/Python 3皆可）
 
-  编写中
+  参见代码： python目录
 
 ## .NET/C#
 

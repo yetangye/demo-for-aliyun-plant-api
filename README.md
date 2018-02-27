@@ -1,6 +1,6 @@
 # demo-for-aliyun-plant-api
 
-阿里云市场智能植物识别（含花卉与杂草）API的开箱即用的示例代码（https://market.aliyun.com/products/57124001/cmapi018620.html#sku=yuncode1262000000）
+阿里云市场智能植物识别（含花卉与杂草）API的开箱即用的示例代码（ <https://market.aliyun.com/products/57124001/cmapi018620.html#sku=yuncode1262000000> ）
 
 ## 关于已购APP CODE无法用于新发布接口的问题
 

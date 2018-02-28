@@ -49,11 +49,13 @@
 
 ## .NET/C#
 
-  编写中
+  参见后文的其他语言示例
 
 ## Android版（带拍照）
 
-  编写中
+  参见代码： android目录
+
+  使用Android Studio 3打开。SDK Manager -> SDK Tools内注意安装Support Repository下面的ConstraintLayout for Android和Solver for ConstraintLayout，必要的时候点击界面右下角的“Show Package Details”，选择需要的具体版本来安装。
 
 ## iOS版
 
@@ -72,10 +74,10 @@
 
   可使用POSTMAN（ <https://www.getpostman.com/> ）工具构建好请求后，通过POSTMAN的code查看功能，查看到各语言的请求示例代码。
 
-  ![](postman/postman-1.png)
-  ![](postman/postman-2.png)
-  ![](postman/postman-3.png)
-  ![](postman/postman-4.png)
+  ![请求配置](postman/postman-1.png)
+  ![请求配置](postman/postman-2.png)
+  ![选择编程语言](postman/postman-3.png)
+  ![可参考代码](postman/postman-4.png)
 
 ## 常见错误和解决方法
 

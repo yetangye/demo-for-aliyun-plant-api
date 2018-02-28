@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">recognize</string>
+
+    <string name="take_photo_of_flower">拍照识花</string>
+    <string name="take_photo_of_weeds">杂草识别</string>
+
+    <string name="permission_settings">权限设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n%1$s\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="quit">退出</string>
+
+    <string name="input_keyword">输入植物代号InfoCode字段</string>
+
+</resources>

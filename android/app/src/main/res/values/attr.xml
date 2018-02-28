@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleCamera">
+        <attr name="autoInitCamera" format="boolean"/>
+        <attr name="showMaskView" format="boolean"/>
+        <attr name="aspectRatio" format="enum">
+            <!-- 标准 4:3-->
+            <enum name="standard" value="1"/>
+            <!-- 全屏 16:9-->
+            <enum name="fullScreen" value="2"/>
+        </attr>
+        <attr name="focusFrameDrawable" format="reference"/>
+        <attr name="foregroundColor" format="color"/>
+    </declare-styleable>
+</resources>

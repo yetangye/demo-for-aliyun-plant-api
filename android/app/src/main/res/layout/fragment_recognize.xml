@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <ViewStub
+        android:id="@+id/cameraStub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/simple_camera" />
+
+    <FrameLayout
+        android:id="@+id/fd_bottomCenterContainer"
+        android:layout_width="@dimen/discern_take_picture_button"
+        android:layout_height="@dimen/discern_take_picture_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/fd_backView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back2"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/fd_loadingView"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_v2_capture" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ldl_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fd_bottomCenterContainer"
+        android:layout_marginBottom="@dimen/recycler_view_margin_bottom"
+        android:layout_marginTop="@dimen/recycler_view_margin_top"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/msgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fd_bottomCenterContainer"
+        android:layout_marginBottom="@dimen/discern_msg_margin_bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#4000"
+        android:minHeight="@dimen/discern_bottom_msg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_size_large"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/responseInfoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/responseImgView"
+                android:layout_width="@dimen/discern_msg_image"
+                android:layout_height="@dimen/discern_msg_image"
+                android:layout_centerVertical="true"
+                android:background="@drawable/frame_background"
+                android:padding="1dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/responseHtmlTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/responseImgView"
+                android:gravity="center_vertical"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/discernTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/take_photo_of_flower"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="11dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/white_back_icon" />
+
+
+</RelativeLayout>

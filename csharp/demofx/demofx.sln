@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demofx", "demofx\demofx.csproj", "{5E07AB0E-6E2C-442B-81A1-A82EE3B4584A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E07AB0E-6E2C-442B-81A1-A82EE3B4584A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E07AB0E-6E2C-442B-81A1-A82EE3B4584A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E07AB0E-6E2C-442B-81A1-A82EE3B4584A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E07AB0E-6E2C-442B-81A1-A82EE3B4584A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBA5FEF9-C6E6-444E-BFAD-A0F48B5EB418}
+	EndGlobalSection
+EndGlobal

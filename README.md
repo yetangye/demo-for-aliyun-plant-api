@@ -50,7 +50,7 @@
 
 ## .NET/C#
 
-  参见后文的其他语言示例
+  参见代码： csharp/demofx；基于.NET Framework 4.5.2；请求基于NuGet上的RestSharp库制作。
 
 ## Android版（带拍照）
 

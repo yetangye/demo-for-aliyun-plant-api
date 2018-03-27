@@ -94,3 +94,25 @@
   可能的原因包括：
   （1）转化后的BASE64编码带 "data:image/jpeg;base64," 前缀，但在请求时没有去掉
   （2）BASE64编码中的加号（+）没有被转化为 %2B
+
+### 返回HTML 413
+
+  识别接口返回如下的HTML
+
+  ``` HTML
+  <html>
+      <head>
+          <title>413 Request Entity Too Large</title>
+      </head>
+      <body bgcolor="white">
+          <center>
+              <h1>413 Request Entity Too Large</h1>
+          </center>
+          <hr>
+          <center>nginx</center>
+      </body>
+  </html>
+  ```
+
+  原因：
+    向接口传递的图片超过1M，需要做控制。传入图片尽量控制在100-200K以内。

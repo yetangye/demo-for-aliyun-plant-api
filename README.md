@@ -9,6 +9,11 @@
   点击【调用API】-【已购买API】，点开API详情，选中新API，点击左下方授权按钮完成授权即可。
   ![对新接口进行授权](docs/auth.png)
 
+## 接口对HTTPS协议的支持
+
+  对于类似微信小程序这样，要求接口必须是HTTPS协议的，
+  请将接口的协议和域名部分，从http://plantgw.nongbangzhu.cn 改成 https://plant.market.alicloudapi.com 即可
+
 ## 植物图片拍照要求
 
   照片尽快能拍成方形，在转换成BASE64前，要求分辨率尽可能调整到500x500，压缩比0.8，格式jpeg，尺寸小于512K。

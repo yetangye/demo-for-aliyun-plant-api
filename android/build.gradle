@@ -2,7 +2,10 @@
 
 buildscript {
     repositories {
-        jcenter()
+        //jcenter()
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -15,7 +18,12 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        google()
+
+        // 修改项目根目录下的build.gradle，将jcenter()或者mavenCentral()替换掉即可，这样国内镜像就很快下载了
+        // jcenter()
     }
 }
 

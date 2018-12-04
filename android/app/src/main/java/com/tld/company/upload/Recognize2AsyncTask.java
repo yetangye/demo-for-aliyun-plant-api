@@ -27,7 +27,7 @@ public class Recognize2AsyncTask extends AsyncTask<Void, Void, ResponseData> {
 
     @Override
     protected ResponseData doInBackground(Void... params) {
-        ResponseData responseData =AliyunPlantApiService.recognize(imag_baseb64);
+        ResponseData responseData =AliyunPlantApiService.recognize2(imag_baseb64);
 
         return responseData;
     }

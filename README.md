@@ -2,7 +2,7 @@
 
 阿里云市场智能植物识别（含花卉与杂草）API的开箱即用的示例代码（ <https://market.aliyun.com/products/57124001/cmapi018620.html> ）
 
-## 2019识花软件大PK，花伴侣力拔头筹
+## 👏🏻 2019识花软件大PK，花伴侣力拔头筹 👏🏻
 
   详见 <https://zhuanlan.zhihu.com/p/58204875>
 

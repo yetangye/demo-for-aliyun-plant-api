@@ -1,6 +1,11 @@
 # demo-for-aliyun-plant-api
 
-阿里云市场智能植物识别（含花卉与杂草）API的开箱即用的示例代码（ <https://market.aliyun.com/products/57124001/cmapi018620.html> ）
+[阿里云市场智能植物识别（含花卉与杂草）API](https://market.aliyun.com/products/57124001/cmapi018620.html)的开箱即用的示例代码。
+
+## (★特别注意★) 接口对HTTPS协议的支持
+
+  ★对于类似微信小程序这样，要求接口必须是HTTPS协议的情况，
+  请将示例代码内接口协议与域名，从 <http://plantgw.nongbangzhu.cn> 改成 <https://plant.market.alicloudapi.com> 即可。
 
 ## 👏🏻 2019识花软件大PK，花伴侣力拔头筹 👏🏻
 
@@ -12,11 +17,6 @@
   登录api网关控制台：<https://apigateway.console.aliyun.com/>，
   点击【调用API】-【已购买API】，点开API详情，选中新API，点击左下方授权按钮完成授权即可。
   ![对新接口进行授权](docs/auth.png)
-
-## 接口对HTTPS协议的支持
-
-  对于类似微信小程序这样，要求接口必须是HTTPS协议的，
-  请将接口的协议和域名部分，从http://plantgw.nongbangzhu.cn 改成 https://plant.market.alicloudapi.com 即可
 
 ## 植物图片拍照要求
 

@@ -58,3 +58,10 @@ obj/
 bin/
 .vs/
 packages/
+android/.project
+java/.classpath
+java/.factorypath
+java/.project
+java/.settings
+android/.gradle
+android/.settings

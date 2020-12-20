@@ -125,3 +125,8 @@
 
   原因：
     向接口传递的图片超过1M，需要做控制。传入图片尽量控制在100-200K以内。
+
+### HTTPS证书过期
+
+  ★对于类似微信小程序这样，要求接口必须是HTTPS协议的情况，
+  请将示例代码内接口协议与域名，从 <http://plantgw.nongbangzhu.cn> 改成 <https://plant.market.alicloudapi.com> 即可。

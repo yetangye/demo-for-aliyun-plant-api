@@ -1,0 +1,10 @@
+<!--pages/result/result.wxml-->
+<view>
+  <image src="{{imgUrl}}"></image>
+  <view class="results" wx:for="{{results}}" wx:key="index">
+    <text>{{item.Name}}</text>
+    <text>{{item.Score}}%</text>
+    <text>{{item.Family}}</text>
+    <text>{{item.Genus}}</text>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/result/result.wxss */
+.results text{
+  margin-right: 10px;
+}
